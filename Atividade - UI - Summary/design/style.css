@@ -1,0 +1,133 @@
+:root{
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+
+    /*Gradients*/
+
+    --LightSlateBlueBackground: hsl(252, 100%, 67%);
+    --LightRoyalBlueBackground: hsl(241, 81%, 54%);
+    --VioletBlueCircle: hsla(256, 72%, 46%, 1);
+    --PersianBlueCircle: hsla(241, 72%, 46%, 0);
+
+    /*Neutral*/
+
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+
+@import url(https://fonts.google.com/specimen/Hanken+Grotesk);
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    width: 1440px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box{
+ display: flex;
+ flex-direction: row;
+ box-shadow: 10px 10px 20px 1px #000;
+ border-radius: 5%;
+ width: 36rem;
+}
+
+.main-result-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(var(--LightSlateBlueBackground), var(--LightRoyalBlueBackground) );
+    height: 25rem;
+    width: 18rem;
+    border-radius: 5%;
+    z-index: 1;
+}
+
+.your-result-txt{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    color: var(--LightLavender);
+}
+
+.score-circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:10rem;
+    width:10rem;
+    border-radius: 100%;
+    background-image: linear-gradient(var(--VioletBlueCircle), var(--PersianBlueCircle));
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    color: var(--LightLavender);
+}
+
+.score-text{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 800;
+    color: var(--White);
+}
+
+.bottom-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--LightLavender);
+}
+
+.bottom-text-title{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+    color: var(--White);
+}
+
+.info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: var(--LightLavender);
+}
+
+.results-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    width: 18rem;
+    background-color: var(--White);
+    row-gap: 0.9rem;
+    border-radius: 5%;
+}
+
+.skill-box{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 2%;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 5%;
+    background-color: var(--DarkGrayBlue);
+    margin-left: 1rem;
+}
